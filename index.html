@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Jan My Sahzadi My Moto❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#e22691;
+      --secondary:#000000;
+      --accent:#ff2e63;
+      --text:#111827;
+      --glass: rgba(255,255,255,.12);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      font-family: 'Poppins', sans-serif;
+      color: var(--secondary);
+      overflow-x:hidden;
+      background: linear-gradient(135deg, #0f172a 0%, #fffffc 40%, #df6ad0e8  100% );
+      background-size: 200% 200%;
+      animation: bgShift 18s ease-in-out infinite;
+    }
+    @keyframes bgShift{
+      0%{background-position:0% 0%}
+      50%{background-position:100% 100%}
+      100%{background-position:0% 0%}
+    }
+    .sparkle{position:fixed; inset:0; pointer-events:none; z-index:0;}
+    #hearts{position:fixed; inset:0; overflow:hidden; pointer-events:none; z-index:1;}
+    .heart{position:absolute; width:14px; height:14px; transform: rotate(-45deg);}
+    .heart:before, .heart:after{
+      content:""; position:absolute; width:14px; height:14px; background: var(--accent);
+      border-radius:50%;
+    }
+    .heart{background: var(--accent);} 
+    .heart:before{top:-7px; left:0}
+    .heart:after{left:7px; top:0}
+    @keyframes fall{
+      0%{transform: translateY(-12vh) rotate(-45deg) scale(0.8); opacity:0}
+      10%{opacity:0.9}
+      100%{transform: translateY(110vh) rotate(315deg) scale(1); opacity:0.95}
+    }
+    .wrap{position:relative; z-index:2; display:flex; align-items:center; justify-content:center; min-height:100vh; padding:24px}
+    .card{
+      width:min(960px, 92vw);
+      background: linear-gradient(180deg, rgba(255,255,255,.18), rgba(255,255,255,.08));
+      border: 1px solid rgba(255,255,255,.18);
+      backdrop-filter: blur(10px);
+      border-radius: 28px;
+      padding: clamp(20px, 4vw, 36px);
+    }
+    .heading{display:flex; align-items:center; gap:16px; flex-wrap:wrap; justify-content:center; text-align:center;}
+    .title{font-family:'Great Vibes', cursive; font-size: clamp(40px, 7vw, 72px); margin:0;}
+    .sub{margin:6px 0 0; font-weight:600; letter-spacing:.3px; opacity:.95}
+.photo {
+  margin: 24px auto 10px;
+  width: min(260px, 60vw);
+  aspect-ratio: 1/1;
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  transform: rotate(270deg);
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flowers-container {
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.flower {
+  position: absolute;
+  bottom:-20px;
+  font-size: 16px;
+  opacity: 1;
+  animation: floatFlower linear forwards;
+  color: pink;
+}
+
+@keyframes floatFlower {
+  0% {
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120%) translateX(100%) scale(1.5);
+    opacity: 0;
+  }
+}
+
+
+
+    .photo img{width:100%; height:100%; object-fit:cover;}
+    .msg{text-align:center; font-size: clamp(15px, 2.4vw, 18px);}
+    .badge{display:inline-flex; align-items:center; gap:8px; background: rgba(0,0,0,.28); padding:8px 14px; border-radius:999px; font-size:14px;}
+    .reveal{text-align:center; margin-top:20px;}
+    .btn{
+      display:inline-block; padding:12px 18px; border-radius:14px; background: linear-gradient(135deg, var(--accent), #ff7aa2);
+      color:white; font-weight:700; border:none; cursor:pointer;
+    }
+    .letter{display:none; margin-top:16px; text-align:left; background: rgba(0,0,0,.28); padding:18px; border-radius:16px}
+    .foot{margin-top:22px; font-size:12px; opacity:.85}
+    .modal-backdrop{position:fixed; inset:0; background: rgba(0,0,0,.55); display:none; align-items:center; justify-content:center; z-index:9999}
+    .modal{width:min(520px, 92vw); background: rgba(255,255,255,.96); color:#1f2937; border-radius:20px; padding:20px 18px;}
+    .modal h3{margin:6px 0 4px; font-size:26px}
+    .modal .actions{display:flex; gap:10px; margin-top:14px; flex-wrap:wrap; justify-content:center;}
+    .modal .actions button{padding:12px 14px; border-radius:12px; border:none; cursor:pointer; font-weight:700}
+    .close{background:#111827; color:white}
+    .flag{position:fixed; right:14px; top:14px; font-size:22px; opacity:.85; z-index:3}
+    ::-webkit-scrollbar{width:10px}
+    ::-webkit-scrollbar-thumb{background: rgba(255,255,255,.2); border-radius:10px}
+  </style>
+</head>
+<body>
+
+<div id="hearts"></div>
+<div class="flag">🇵z</div>
+
+<div class="wrap">
+  <main class="card">
+    <div class="heading">
+      <h1 class="title">Happy Independence Day, Mari Sahzadi Nabiha </h1>
+      <div class="badge">❤️ Love You So Much Jani Ki Jan </div>
+    </div>
+
+    <div class="photo">
+        <!-- <div class="flowers-container"></div> -->
+      <img src="Screenshot_20250811-161517_1.png" alt="My Love"/>
+        <div class="flowers-container"></div>
+    </div>
+
+    <section class="msg">
+  <p>Meri pyaari <span id="herNameText">Nabiha</span> ❤️, tum sirf meri mohabbat nahi, meri rooh ki sukoon ho. Jis pal tumhari yaad aati hai, us pal se zindagi khubsurat ho jati hai.</p>
+
+  <p>Tumhari hansi meri subah ka noor hai, tumhari awaaz meri raat ki dua. Main shukar ada karta hun ke Rab ne mujhe tum jaisi saaf dil wali, pyaari si <em>sahzadi</em> di. 🤍</p>
+
+  <p>Log kehte hain pyaar me lafz kam pad jatay hain, lekin mere liye tumhara naam hi kafi hai—<strong><span id="herNameText">Nabiha</span></strong>. Har dhadkan tumhara zikr karti hai, har saans tumhe hi pukarti hai.</p>
+
+  <p>Main wada karta hun: kabhi haath chhorunga nahi, kabhi aansu aane dunga nahi, aur har mushkil me tumse pehle tumhara sahara banunga. Tumhari khushi meri zimmedari hai, meri jaan. ✨</p>
+
+  <p>Aaj se har lamha tumhara—chhoti si khushi ho ya badi si jeet—sab pehle tumhare naam. Agar zindagi safar hai, to meri manzil sirf tum ho, aur mera raasta tumhari muskurahat. 💫</p>
+
+  <p><strong>Ek baat yaad rakhna:</strong> agar sab duniya tumse door ho jaye, main phir bhi tumhare saath khara rahunga—sirf tumhara, har baar, har dafa. Forever & always. 💍</p>
+
+  <p style="margin-top:10px">— <span id="myNameText">Tumhara Shehzada</span></p>
+</section>
+
+
+
+   
+    <div style="text-align:center; margin-top:20px;">
+      <button class="btn" id="secretBtn">Secret Message For You ❤️</button>
+      <div class="letter" id="letter"></div>
+    </div>
+
+    <div class="foot">Made with ❤️ just for Mari Jan Nabiha • 14 August</div>
+  </main>
+</div>
+
+<audio id="bgMusic" src="Dil_Ibaadat__Slowed_Reverb__-_Pritam___KK____Tum_Mile____Maya_Vibes____Textaudio(128k).mp3" preload="auto" loop></audio>
+
+<!-- First Popup -->
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal">
+    <h3>Oye Mari Cute si jan ya tumhara ley 💌</h3>
+    <p>
+        Meri pyaari Nabiha ❤️, ye pehla note meri taraf se tumhare liye ek chhota sa tohfa hai,
+        lekin isme mere dil ka poora pyaar basa hua hai. 🌹  
+        Tum meri muskaan ka sabab ho, meri duaon ka jawaab… aur meri kahani ka sabse khoobsurat hissa.  
+        Bas itna samajh lo janii, yeh shuruat hai ek kahani ki… jo hamesha ke liye tum aur main likhenge. 💕
+    </p>
+    <div class="actions">
+      <button class="close" id="closeBtn">Ok Janii G ❤️</button>
+    </div>
+</div>
+
+</div>
+
+<!-- Romantic Popup -->
+<div class="modal-backdrop" id="romanticBackdrop">
+  <div class="modal" style="text-align:center;">
+    <img src="a7ce9844e249b102bce3f12e05c59b05.jpg" alt="Romantic" style="max-width:50%; border-radius:20px; margin-bottom:15px;">
+    <div class="actions">
+      <p>I Love You... Mari Cute Si Mano Mari Moto</p>
+      <button class="close" id="acceptBtn">Accept ❤️</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const audio = document.getElementById('bgMusic');
+setTimeout(() => {
+  document.getElementById('modalBackdrop').style.display = 'flex';
+}, 3000);
+
+document.getElementById('closeBtn').addEventListener('click', () => {
+  audio.play().catch(()=>{});
+  document.getElementById('modalBackdrop').style.display = 'none';
+});
+
+document.getElementById('secretBtn').addEventListener('click', () => {
+  document.getElementById('romanticBackdrop').style.display = 'flex';
+});
+
+document.getElementById('acceptBtn').addEventListener('click', () => {
+  document.getElementById('romanticBackdrop').style.display = 'none';
+  typeRomanticMessage("Meri jaan ❤️, tum meri zindagi ka wo hissa ho jo har pal ko ek kahani bana deta hai. 🌹 Tumhari muskaan meri rooh ka sukoon hai, tumhari awaaz meri duaon ka jawaab. Tum meri duniya ka sabse khoobsurat sach ho, aur mera har din tumhari yaadon ka geet gaata hai. 💫 Main wada karta hoon: chahe samandar kitne bhi toofani kyun na ho, mera pyaar tum tak zaroor pohanchega. Tum meri duaon ka wo noor ho jise Rab ne sirf mere liye bheja hai… aur main hamesha, har lamha, tumhara rahunga. 💕 Forever & Always. 💍");
+
+});
+
+
+
+function typeRomanticMessage(msg) {
+  const letterBox = document.getElementById('letter');
+  letterBox.style.display = 'block';
+  letterBox.innerHTML = '';
+  let i = 0;
+  function type() {
+    if (i < msg.length) {
+      letterBox.innerHTML += msg.charAt(i);
+      i++;
+      setTimeout(type, 80);
+    }
+  }
+  type();
+}
+
+// Hearts rain
+const hearts = document.getElementById('hearts');
+setInterval(() => {
+  const h = document.createElement('div');
+  h.className = 'heart';
+  const size = Math.random()*12 + 8;
+  h.style.width = size + 'px';
+  h.style.height = size + 'px';
+  h.style.left = Math.random()*100 + 'vw';
+  h.style.opacity = (Math.random()*0.5 + 0.5).toFixed(2);
+  const dur = Math.random()*8 + 8;
+  h.style.animation = `fall ${dur}s linear forwards`;
+  hearts.appendChild(h);
+  setTimeout(()=>{ h.remove(); }, dur*1000 + 100);
+}, 90);
+
+const flowersContainer = document.querySelector('.flowers-container');
+
+function createFlower() {
+  const flower = document.createElement('div');
+  flower.classList.add('flower');
+  flower.innerHTML = '🌸'; // flower emoji
+  flower.style.left = Math.random() * 100 + '%'; // full width
+  flower.style.fontSize = (12 + Math.random() * 20) + 'px'; // random size
+  flower.style.animationDuration = (4 + Math.random() * 3) + 's'; // random speed
+  flower.style.transform = `translateX(${Math.random() * 40 - 20}px)`; // slight side movement
+  flowersContainer.appendChild(flower);
+
+  setTimeout(() => flower.remove(), 7000); // remove after animation
+}
+
+// Generate flowers continuously
+setInterval(createFlower, 150); // every 0.15s
+
+
+// Generate hearts continuously
+setInterval(createHeart, 200); // every 0.2s
+
+
+</script>
+</body>
+</html>
